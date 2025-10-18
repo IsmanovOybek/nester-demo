@@ -1,22 +1,24 @@
+import TrendProperties from "@/libs/components/homepage/TrendProperties";
 import withLayoutMain from "@/libs/components/layout/LayoutHome";
 import { Box, Container, Stack } from "@mui/material";
 import { brown, green } from "@mui/material/colors";
 import { NextPage } from "next";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import PopularProperties from "@/libs/components/homepage/PopularProperties";
+import Advertisement from "@/libs/components/homepage/Advertisement";
+import TopProperties from "@/libs/components/homepage/TopProperties";
+import TopAgents from "@/libs/components/homepage/TopAgents";
 
 const Home: NextPage = () => {
   return (
-    <Stack>
-      <Stack flexDirection={"column"}>
-        <Stack>
-          <Stack className="container"> Popular Properties</Stack>
-        </Stack>
-        <Stack>
-          <Stack className="container"> Top Agents</Stack>
-        </Stack>
-        <Stack>
-          <Stack className="container"> Events</Stack>
-        </Stack>
-      </Stack>
+    <Stack className={"home-page"}>
+      <TrendProperties />
+      <PopularProperties />
+      <Advertisement />
+      <TopProperties />
+      <TopAgents />
     </Stack>
   );
 };
