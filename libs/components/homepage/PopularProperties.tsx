@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import PopularPropertyCard from "./PopularPropertyCard";
 
+
+
+
 const PopularProperties = ({ initialInput, ...props }: any) => {
   const [popularProperties, setPopularProperties] =
     useState<number[]>(initialInput);

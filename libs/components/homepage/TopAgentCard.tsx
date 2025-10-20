@@ -5,7 +5,7 @@ const TopAgentCard = () => {
   return (
     <Stack>
       <div className="top-agent-card">
-        <img src="/img/banner/types/villa.webp" alt="atyped" />
+        <img src="/img/profile/girl.svg" alt="atyped" />
         <strong style={{ color: "bleck" }}>Mary Jane</strong>
         <span>Agent</span>
       </div>
